@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformeCompleto" >
+
+    <!-- Contenedor para el botón -->
+    <LinearLayout
+        android:id="@+id/secondLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver" />
+    </LinearLayout>
+
+    <!-- Contenedor para la TableLayout dentro de un HorizontalScrollView -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/secondLinearLayout"
+        android:fadeScrollbars="false"
+        android:scrollbars="horizontal">
+
+        <LinearLayout
+            android:id="@+id/firstLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginTop="16dp">
+            </TableLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

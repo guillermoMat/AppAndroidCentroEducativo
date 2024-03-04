@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Educar Para Transformar</string>
+    <string name="Usuario">Usuario</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="iniciar_sesi_n">Iniciar Sesión</string>
+    <string name="close_drawer">Cerrar menú</string>
+    <string name="open_drawer">Abrir menú</string>
+    <string name="conectar">Conectar</string>
+    <string name="agendar">Agendar</string>
+    <string name="Buscar" />
+</resources>

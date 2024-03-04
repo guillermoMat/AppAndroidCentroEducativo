@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".horariosClaseProf">
+<!--
+ CODIGO ORIGINAL CON EL QUE FUNCIONA
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="16dp">
+    </TableLayout>
+-->
+<!-- Contenedor para la TableLayout -->
+<LinearLayout
+    android:id="@+id/firstLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_above="@+id/secondLinearLayout">
+    </TableLayout>
+
+</LinearLayout>
+
+<!-- Contenedor para el botón -->
+<LinearLayout
+    android:id="@+id/secondLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true">
+
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver" />
+
+</LinearLayout>
+</RelativeLayout >
